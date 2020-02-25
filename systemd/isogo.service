@@ -1,0 +1,12 @@
+[Unit]
+Description=ISOGo
+After=network-online.target
+
+[Service]
+User=kamushadenes
+Group=kamushadenes
+Type=oneshot
+ExecStart=/usr/local/bin/isogo -config /etc/isogo/isogo.yml -download -keep
+
+[Install]
+WantedBy=default.target
