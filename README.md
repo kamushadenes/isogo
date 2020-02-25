@@ -21,6 +21,8 @@ The config file [config/isogo.yml](https://github.com/kamushadenes/isogo/blob/ma
 go build -o isogo
 ```
 
+Or download one of the auto-built [releases](https://github.com/kamushadenes/isogo/releases).
+
 ### SystemD
 
 To run it periodically through systemd, place the `isogo` binary you built on `/usr/local/bin` and run:
