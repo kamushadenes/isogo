@@ -1,0 +1,31 @@
+isos:
+  - name: "ArchLinux"
+    url: "http://mirrors.edge.kernel.org/archlinux/iso/latest/"
+    discover: true
+    regex: "^archlinux-.*-x86_64.iso$"
+    destination: "isos/archlinux/"
+
+  - name: "Ubuntu Bionic Desktop"
+    url: "http://cl.releases.ubuntu.com/bionic/"
+    discover: true
+    regex: "^ubuntu-.*-desktop-amd64.iso$"
+    destination: "isos/ubuntu/desktop/"
+
+  - name: "Ubuntu Bionic Server"
+    url: "http://cl.releases.ubuntu.com/bionic/"
+    discover: true
+    regex: "^ubuntu-.*-server-amd64.iso$"
+    destination: "isos/ubuntu/server/"
+
+keep:
+  - directory: "isos/archlinux/"
+    regex: "^archlinux-.*-x86_64.iso$"
+    last: 3
+
+  - directory: "isos/ubuntu/desktop/"
+    regex: "^ubuntu-.*-desktop-amd64.iso$"
+    last: 3
+    
+  - directory: "isos/ubuntu/server/"
+    regex: "^ubuntu-.*-server-amd64.iso$"
+    last: 3
