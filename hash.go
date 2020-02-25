@@ -6,6 +6,7 @@ import (
 	"crypto/md5"
 	"crypto/sha1"
 	"crypto/sha256"
+	"crypto/sha512"
 	"encoding/hex"
 	"hash"
 	"io/ioutil"
@@ -16,6 +17,7 @@ import (
 )
 
 var possibleHashFiles = []string{
+	"SHA512SUMS", "sha512sums.txt",
 	"SHA256SUMS", "sha256sums.txt",
 	"SHA1SUMS", "sha1sums.txt",
 	"MD5SUMS", "md5sums.txt"}
@@ -55,7 +57,10 @@ func getHash(url *url.URL, fname string) (hasHash bool, hashName string, h hash.
 		for scanner.Scan() {
 			line := scanner.Text()
 			if strings.HasSuffix(line, fname) {
-				if strings.Contains(strings.ToLower(nurl.Path), "sha256sums") {
+				if strings.Contains(strings.ToLower(nurl.Path), "sha512sums") {
+					h = sha512.New()
+					hashName = "SHA512"
+				} else if strings.Contains(strings.ToLower(nurl.Path), "sha256sums") {
 					h = sha256.New()
 					hashName = "SHA256"
 				} else if strings.Contains(strings.ToLower(nurl.Path), "sha1sums") {
