@@ -1,6 +1,11 @@
-# isogo
-
+<h1 align="center">ISOGo</h1>
+<p align="center">
 ISOGo is an small utility to automate the download of OS ISO images for safekeeping on a server.
+</p>
+
+<hr> 
+
+## Configuration
 
 The config file [config/isogo.yml](https://github.com/kamushadenes/isogo/blob/master/config/isogo.yml) should be self-explanatory.
 
