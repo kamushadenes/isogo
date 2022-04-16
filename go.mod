@@ -11,6 +11,7 @@ require (
 	github.com/fatih/gomodifytags v1.2.0 // indirect
 	github.com/fatih/structtag v1.2.0 // indirect
 	github.com/godoctor/godoctor v0.0.0-20181123222458-69df17f3a6f6 // indirect
+	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golangci/golangci-lint v1.23.6 // indirect
 	github.com/gosuri/uilive v0.0.4
 	github.com/haya14busa/gopkgs v1.0.0 // indirect
@@ -21,12 +22,8 @@ require (
 	github.com/sirupsen/logrus v1.4.2
 	github.com/willf/bitset v1.1.10 // indirect
 	github.com/zmb3/gogetdoc v0.0.0-20190228002656-b37376c5da6a // indirect
-	golang.org/x/mod v0.2.0 // indirect
-	golang.org/x/net v0.0.0-20200222125558-5a598a2470a0 // indirect
 	golang.org/x/sys v0.0.0-20220412211240-33da011f77ad // indirect
-	golang.org/x/tools v0.0.0-20200221224223-e1da425f72fd // indirect
 	golang.org/x/tools/gopls v0.3.2 // indirect
-	golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543 // indirect
 	gopkg.in/yaml.v1 v1.0.0-20140924161607-9f9df34309c0
-	gopkg.in/yaml.v2 v2.2.8
+	gopkg.in/yaml.v2 v2.4.0
 )
