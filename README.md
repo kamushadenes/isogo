@@ -44,3 +44,9 @@ sudo systemctl enable isogo.timer
 ```
 
 Make sure to edit [isogo.yml](https://github.com/kamushadenes/isogo/blob/master/config/isogo.yml) and [isogo.timer](https://github.com/kamushadenes/isogo/blob/master/systemd/isogo.timer) to fit your needs.
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+<a href="https://www.buymeacoffee.com/kamushadenes"> <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="32" alt="kamushadenes" /></a>
