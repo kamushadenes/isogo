@@ -3,7 +3,7 @@ module isogo
 go 1.13
 
 require (
-	github.com/PuerkitoBio/goquery v1.8.1
+	github.com/PuerkitoBio/goquery v1.9.1
 	github.com/cavaliercoder/grab v2.0.0+incompatible
 	github.com/gosuri/uilive v0.0.4
 	github.com/kr/pretty v0.1.0 // indirect
